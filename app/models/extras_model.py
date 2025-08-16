@@ -15,9 +15,6 @@ class BookImage(SQLModel):
     image_url: str
     is_thumbnail: bool
 
-class BookCategory(SQLModel):
-    book_id: int
-    category_id: int
 
 class Review(SQLModel):
     id: int = Field(default= None, primary_key=True)
